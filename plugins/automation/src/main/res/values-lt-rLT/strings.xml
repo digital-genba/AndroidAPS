@@ -87,6 +87,9 @@
     <string name="cobcompared">AAO %1$s %2$.0f</string>
     <string name="triggerHeartRate">Pulsas</string>
     <string name="triggerHeartRateDesc">Pulsas %1$s %2$.0f</string>
+    <string name="triggerPodChangeLabel">Pod aktyvavimas</string>
+    <string name="triggerPodChangeDesc">Pod aktyvuotas</string>
+    <string name="triggerInsulinAgeLabel">Insulino laikas</string>
     <string name="iob_u">AIO [U]:</string>
     <string name="distance_short">Atstumas [m]:</string>
     <string name="recurringTime">Pasikartojantis laikas</string>
@@ -104,8 +107,6 @@
     <string name="automation_event">Automatizuotas įvykis</string>
     <string name="reorder_label">Pertvarkyti</string>
     <string name="user_action">Naudotojo veiksmas</string>
-    <string name="remove_automation">Pašalinti automatizaciją</string>
-    <string name="sort_automation">Rūšiuoti automatizacijas</string>
     <string name="remove_selected_items">Pašalinti pasirinktus elementus</string>
     <string name="count_selected">%1$d pasirinkta</string>
     <string name="system_automation">Sistemos automatizacija</string>

@@ -2,6 +2,7 @@ package app.aaps.wear.di
 
 import app.aaps.wear.comm.DataLayerListenerServiceWear
 import app.aaps.wear.complications.BaseComplicationProviderService
+import app.aaps.wear.complications.BrIobComplication
 import app.aaps.wear.complications.BrCobIobComplication
 import app.aaps.wear.complications.CobDetailedComplication
 import app.aaps.wear.complications.CobIconComplication
@@ -19,7 +20,7 @@ import app.aaps.wear.tile.ActionsTileService
 import app.aaps.wear.tile.QuickWizardTileService
 import app.aaps.wear.tile.TempTargetTileService
 import app.aaps.wear.tile.TileBase
-import app.aaps.wear.watchfaces.AapsLargeWatchface
+import app.aaps.wear.tile.UserActionTileService
 import app.aaps.wear.watchfaces.CircleWatchface
 import app.aaps.wear.watchfaces.CustomWatchface
 import app.aaps.wear.watchfaces.DigitalStyleWatchface
@@ -37,6 +38,7 @@ abstract class WearServicesModule {
     @ContributesAndroidInjector abstract fun contributesStepsCountListenerService(): StepCountListener
     @ContributesAndroidInjector abstract fun contributesBaseComplicationProviderService(): BaseComplicationProviderService
     @ContributesAndroidInjector abstract fun contributesBrCobIobComplication(): BrCobIobComplication
+    @ContributesAndroidInjector abstract fun contributesBrIobComplication(): BrIobComplication
     @ContributesAndroidInjector abstract fun contributesCobDetailedComplication(): CobDetailedComplication
     @ContributesAndroidInjector abstract fun contributesCobIconComplication(): CobIconComplication
     @ContributesAndroidInjector abstract fun contributesCobIobComplication(): CobIobComplication
@@ -50,13 +52,13 @@ abstract class WearServicesModule {
     @ContributesAndroidInjector abstract fun contributesWallpaperComplication(): WallpaperComplication
 
     @ContributesAndroidInjector abstract fun contributesBaseWatchFace(): BaseWatchFace
-    @ContributesAndroidInjector abstract fun contributesAapsLargeWatchface(): AapsLargeWatchface
     @ContributesAndroidInjector abstract fun contributesDigitalStyleWatchface(): DigitalStyleWatchface
     @ContributesAndroidInjector abstract fun contributesCircleWatchface(): CircleWatchface
     @ContributesAndroidInjector abstract fun contributesCustomWatchface(): CustomWatchface
 
     @ContributesAndroidInjector abstract fun contributesTileBase(): TileBase
     @ContributesAndroidInjector abstract fun contributesQuickWizardTileService(): QuickWizardTileService
+    @ContributesAndroidInjector abstract fun contributesUserActionTileService(): UserActionTileService
     @ContributesAndroidInjector abstract fun contributesTempTargetTileService(): TempTargetTileService
     @ContributesAndroidInjector abstract fun contributesActionsTileService(): ActionsTileService
 

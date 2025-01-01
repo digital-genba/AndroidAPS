@@ -10,8 +10,8 @@ enum class StringKey(
     override val dependency: BooleanPreferenceKey? = null,
     override val negativeDependency: BooleanPreferenceKey? = null,
     override val hideParentScreenIfHidden: Boolean = false,
-    val isPassword: Boolean = false,
-    val isPin: Boolean = false
+    override val isPassword: Boolean = false,
+    override val isPin: Boolean = false
 ) : StringPreferenceKey {
 
     GeneralUnits("units", "mg/dl"),
@@ -19,6 +19,8 @@ enum class StringKey(
     GeneralPatientName("patient_name", ""),
     GeneralSkin("skin", ""),
     GeneralDarkMode("use_dark_mode", "dark", defaultedBySM = true),
+
+    AapsDirectoryUri("aaps_directory", ""),
 
     ProtectionMasterPassword("master_password", "", isPassword = true),
     ProtectionSettingsPassword("settings_password", "", isPassword = true),
